@@ -20,6 +20,7 @@ class Handler implements URLHandler {
                 if (parameters[0].equals("s")) {    
                     s = parameters[1];
                     myStringList.add(s);
+                    System.out.println(myStringList);
 
                     String tempConcatString = myStringList.get(0);
                     tempConcatString = tempConcatString + "\n";
