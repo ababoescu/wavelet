@@ -3,12 +3,9 @@ import java.net.URI;
 import java.util.*;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
-
     ArrayList <String> myStringList = new ArrayList<>();
     String s = new String();
-    int num = 0;
+    
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return "Need to add this to your url code: /add-message?s=";
